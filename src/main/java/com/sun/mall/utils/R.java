@@ -1,6 +1,5 @@
 package com.sun.mall.utils;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -29,6 +28,6 @@ public class R extends HashMap<String,Object> implements Serializable {
         return new R(true,"200","success",data);
     }
     public static R fail(String msg){
-        return new R(false,"500",msg,null);
+        return new R(false,"500",msg);
     }
 }
